@@ -59,13 +59,10 @@ class Student{
 				System.out.println("---------------------");
 				System.out.println("이름 : "+arr.get(i).getName());
 				System.out.println("학번 : "+arr.get(i).getNum());
-				System.out.println("---------------------");
-				break;
+				System.out.println("---------------------");				
 			}
-//			else {
-//				System.out.println("조건에 맞는 학생이 없습니다");				
-//			}
 			if(i==arr.size()) {
+				System.out.println("조건에 맞는 학생이 없습니다");	
 				break;
 			}
 		}
@@ -80,72 +77,52 @@ class Student{
 			if(arr.get(i).getNum()==num) {
 				System.out.println(arr.get(i).getName()+"의 정보를 삭제했습니다");
 				arr.remove(i);
-			}else {			
-				System.out.println("조건에 맞는 학생이 없습니다");	
 				break;
 			}
 			if(i==arr.size()) {
+				System.out.println("조건에 맞는 학생이 없습니다");	
 				break;
 			}
 		}
 	}
 	public void modify() {
-		Student st = new Student();
+		
 		Scanner scan = new Scanner(System.in);
-		System.out.println("정보를 수정할 학생의 학번을 입력하세요");
-		num = scan.nextInt();
-		int tempNum;
-		String tempName;
-		int i =0;
-		for(;i<arr.size();i++) {
-			if(arr.get(i).getNum()==num) {
-				tempNum=arr.get(i).getNum();
-				tempName = arr.get(i).getName();
-				
-				System.out.println("학번 수정 : ");
-				num = scan.nextInt();
-				int num = 0;
-				boolean bool = true;
-				while( bool ) {
-					System.out.println("학번 입력");
-					num = scan.nextInt();
-					int k=0;
-					for(;k<arr.size();k++) {
-						if(arr.get(k).getNum() == num) {
-							System.out.println("동일한 학번이 존재합니다");
-							break;
-						}else {
-							System.out.println("조건에 맞는 학생이 없습니다");
-							break;
-						}
-					}
+		boolean bool = true;
+		while( bool ) {
+			System.out.println("수정 학번 입력");
+			num = scan.nextInt();
+			int k=0;
+			for( ;k<arr.size(); k++) {
+				if(arr.get(k).getNum() == num) {
+					System.out.println("---학생 정보---");
+					System.out.println(arr.get(k).getNum());
+					System.out.println(arr.get(k).getName());					
+					System.out.println("-------------");
+					System.out.println("수정할 이름 입력");
+					String name = scan.next();
 					
-					if(k == arr.size()) {						
-						break;
-					}
-				}
-				System.out.print("이름 수정 : ");
-				name = scan.next();
-				st.setName(name);
-				st.setNum(num);
-				
-				arr.add(st);
-				System.out.println("수정이 완료되었습니다");
-				System.out.println("수정 전\t수정 후");
-				for(;i<arr.size();i++) {
-					if(arr.get(i).getNum()==num) {
-						System.out.println("이름 : "+tempName+"\t이름 : "+arr.get(i).getName());
-						System.out.println("학번 : "+tempNum+"\t학번 : "+arr.get(i).getNum());
-					}
+					Student st = arr.get(k);
+					st.setName(name);
+					arr.remove(k); arr.add(st);
+					System.out.println("수정되었습니다");
+					bool = false;
+					break;
 				}
 			}
+			if(k == arr.size())
+				System.out.println("해당 학생은 존재하지 않습니다");
 		}
 	}
-	public void print() {				
+	public void print() {
+		
 		for(int i =0; i<arr.size();i++) {
 			Student stp = arr.get(i);
-			System.out.println(stp.getName()+" : "+stp.getNum());
-			
+			System.out.println("이름\t학번");
+			System.out.println(stp.getName()+"\t"+stp.getNum());			
+		}
+		if(arr.isEmpty()) {
+			System.out.println("아무도 등록 되어있지 않습니다");
 		}
 	}
 	public void exit() {
