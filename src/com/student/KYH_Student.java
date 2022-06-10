@@ -38,6 +38,7 @@ public void start() {
 	
 public void register() {
 	
+
 	System.out.println("등록");
 	}
 public void find() {
@@ -59,4 +60,5 @@ public void print() {
 public void exit() {
 	System.out.println("종료");
 }
+
 }

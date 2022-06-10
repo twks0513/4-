@@ -1,9 +1,11 @@
 package com.student;
 import java.util.*;
 
-//import com.student.BEH_Student;
+
+
+import com.student.BEH_Student;
 //import com.student.KJH_Student; //직접 하실땐 본인거 주석해제해서 사용해주세요
-import com.student.KYH_Student;
+//import com.student.KYH_Student;
 
 
 public class StudentMain {
@@ -20,6 +22,8 @@ public class StudentMain {
 		switch(go) {
 		case 1: 
 			System.out.println("방은혁");
+			BEH_Student beh = new BEH_Student();
+			beh.main(args);
 			break;
 		case 2: 
 			ks.info();
