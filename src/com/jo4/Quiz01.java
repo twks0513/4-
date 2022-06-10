@@ -1,10 +1,17 @@
 package com.jo4;
 
 import java.util.Scanner;
+import com.jo4.*;
+import com.jo4.event.Event;
+import com.jo4.event.Event1;
+
 import member.*;
+
 public class Quiz01 {
 	public static void main(String[] args) {
 		Member mem = new Member();
+		Event ev = new Event();
+		Event1 ev1 = new Event1();
 		Scanner scan = new Scanner(System.in);
 		System.out.println("1.회원관련 2.이벤트관련");
 		int choice = scan.nextInt();
@@ -22,9 +29,9 @@ public class Quiz01 {
 			System.out.println("1.이달의 이벤트 2. 전체 이벤트");
 			int eventchoice = scan.nextInt();
 			if(eventchoice ==1) {
-				System.out.println("이달의 이벤트기능");
+				ev1.event();
 			}else if (eventchoice ==2) {
-				System.out.println("전체 이벤트 기능");
+				ev.event();
 			}
 		}
 			
