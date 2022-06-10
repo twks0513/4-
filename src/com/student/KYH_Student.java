@@ -7,12 +7,12 @@ public void start() {
 	Scanner input = new Scanner (System.in);
 	int num=0;
 	while(true) {
-	System.out.println("1.ÇĞ»ıµî·Ï");
-	System.out.println("2.ÇĞ»ı°Ë»ö");
-	System.out.println("3.ÇĞ»ı»èÁ¦");
-	System.out.println("4.ÇĞ»ı¼öÁ¤");
-	System.out.println("5.¸ğµçÇĞ»ıÃâ·Â");
-	System.out.println("6.Á¾·á");
+	System.out.println("1.í•™ìƒë“±ë¡");
+	System.out.println("2.í•™ìƒê²€ìƒ‰");
+	System.out.println("3.í•™ìƒì‚­ì œ");
+	System.out.println("4.í•™ìƒìˆ˜ì •");
+	System.out.println("5.ëª¨ë“ í•™ìƒì¶œë ¥");
+	System.out.println("6.ì¢…ë£Œ");
 	System.out.println(">>>");
 	num = input.nextInt();
 	
@@ -38,32 +38,25 @@ public void start() {
 	
 public void register() {
 	
-	System.out.println("ÇĞ»ıµî·Ï");
-	System.out.println("ÇĞ¹øÀÔ·Â:");
-	System.out.println("ºñ¹Ğ¹øÈ£ÀÔ·Â:");
-	System.out.println("ÀúÀå¿Ï·á");
-}
+	System.out.println("ë“±ë¡");
+	}
 public void find() {
-	System.out.println("ÇĞ»ı °Ë»ö");
-	System.out.println("Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù.");
-	System.out.println("ÇĞ»ıÃâ·Â");
+	System.out.println("ê²€ìƒ‰");
 }
 public void delete() {
-	System.out.println("ÇĞ»ı°Ë»ö");
-	System.out.println("Á¸ÀçÇÏÁö ¾Ê´Â ÇĞ»ı");
-	System.out.println("»èÁ¦ÇÕ´Ï´Ù.");
+	System.out.println("ì‚­ì œ");
 	
 }
 public void modify() {
-	System.out.println("Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù");
-	System.out.println("¼öÁ¤ÇÕ´Ï´Ù.");
+
+	System.out.println("ìˆ˜ì •");
 	
 }
 public void print() {
-	System.out.println("¸ğµçÇĞ»ı Ãâ·Â");
+	System.out.println("ëª¨ë‘ì¶œë ¥");
 	
 }
 public void exit() {
-	System.out.println("Á¾·áÇÕ´Ï´Ù.");
+	System.out.println("ì¢…ë£Œ");
 }
 }
