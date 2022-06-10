@@ -1,6 +1,29 @@
 package com.student;
 
+import java.util.ArrayList;
 import java.util.Scanner;
+
+class stu{
+	private String name;
+	private int pw;
+	
+	public ArrayList arr = new ArrayList();
+	
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getPw() {
+		return pw;
+	}
+	public void setPw(int pw) {
+		this.pw = pw;
+	}
+	
+	
+}
 
 public class KYH_Student {
 public void start() {
@@ -37,12 +60,24 @@ public void start() {
 	
 	
 public void register() {
+	//ArrayList<stu> arr = new ArrayList<stu>();
+	Scanner input = new Scanner (System.in);
+	//System.out.println("등록");
+	System.out.println("이름: ");
+	String name=input.next();
+	System.out.println("비밀번호: ");
+	int pw = input.nextInt();
 	
-
-	System.out.println("등록");
+	stu s = new stu();
+	s.setName(name); s.setPw(pw);
+	for(int i=0;i<8;i++) {
+	//s.arr.add(s);
+	System.out.println(s.arr.get(i));}
+	
 	}
 public void find() {
 	System.out.println("검색");
+	
 }
 public void delete() {
 	System.out.println("삭제");
@@ -55,6 +90,10 @@ public void modify() {
 }
 public void print() {
 	System.out.println("모두출력");
+	stu s= new stu();
+	for(int i=0;i<s.arr.size();i++) {
+		System.out.println("이름: "+s.arr.get(i));
+	}
 	
 }
 public void exit() {
