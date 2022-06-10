@@ -7,15 +7,14 @@ public class StudentMain {
 
 		KYH_Student yh = new KYH_Student();
 		KJH_Student ks = new KJH_Student();
+		BEH_Student beh = new BEH_Student();
 
 		Scanner scan = new Scanner(System.in);
 		int go;
 		System.out.println("1.방은혁 2.금지혜 3.김윤현");
 		go = scan.nextInt();
 		switch(go) {
-		case 1: 
-			System.out.println("방은혁");
-			BEH_Student beh = new BEH_Student();
+		case 1: 			
 			beh.main(args);
 			break;
 		case 2: 
