@@ -16,6 +16,7 @@ package com.student;
 - 5.모든학생 출력
 - 6.종료
 */
+
 import java.util.Scanner;
 
 public class KJH_Student {
