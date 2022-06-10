@@ -1,8 +1,8 @@
 package com.student;
 import java.util.*;
-//import day17.BEH_Student;
-//import day17.KJH_Student; //직접 하실땐 본인거 주석해제해서 사용해주세요
-//import day17.KYH_Student;
+//import com.student.BEH_Student;
+//import com.student.KJH_Student; //직접 하실땐 본인거 주석해제해서 사용해주세요
+//import com.student.KYH_Student;
 
 public class StudentMain {
 
