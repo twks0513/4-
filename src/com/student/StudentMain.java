@@ -1,13 +1,6 @@
 package com.student;
 import java.util.*;
 
-
-
-import com.student.BEH_Student;
-//import com.student.KJH_Student; //직접 하실땐 본인거 주석해제해서 사용해주세요
-//import com.student.KYH_Student;
-
-
 public class StudentMain {
 
 	public static void main(String[] args) {
@@ -32,7 +25,5 @@ public class StudentMain {
 			yh.start();					
 			break;
 		}
-
 	}
-
 }
