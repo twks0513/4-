@@ -1,21 +1,5 @@
 package com.student;
-/*ÇĞ»ı°ü¸® ÇÁ·Î±×·¥ ¸¸µé¾î ÁÖ¼¼¿ä
-- 1.ÇĞ»ıµî·Ï
-   - Á¸ÀçÇÏ´Â ÇĞ»ıÀÌ¸é Á¸ÀçÇÏ´Â ÇĞ»ıÀÔ´Ï´Ù.
-   - µ¿ÀÏÇÑ ¾ÆÀÌµğ(¶Ç´Â ÇĞ¹ø)°¡ÀÔÇÏ¸é Á¸ÀçÇÏ´Â ¾ÆÀÌµğ(ÇĞ¹ø)ÀÔ´Ï´Ù
-   - ÀúÀåÀÌ ¿Ï·áµÇ¸é 'µî·ÏµÇ¾ú½À´Ï´Ù'
-- 2.ÇĞ»ı°Ë»ö
-   - Á¸ÀçÇÏ¸é ÇØ´ç ÇĞ»ı Ãâ·Â
-   - Á¸ÀçÇÏÁö ¾ÊÀ¸¸é 'Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù'
-- 3.ÇĞ»ı»èÁ¦
-   - Á¸ÀçÇÏÁö ¾ÊÀ¸¸é 'Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù'
-   - Á¸ÀçÇÏ´Â ÇĞ»ıÀÌ¸é ÇØ´ç°ª »èÁ¦
-- 4.¼öÁ¤
-   - Á¸ÀçÇÏÁö ¾ÊÀ¸¸é 'Á¸ÀçÇÏÁö ¾Ê½À´Ï´Ù'
-   - Á¸ÀçÇÑ´Ù¸é ÇØ´ç ÇĞ»ıÀÇ ¾ÆÀÌµğ(ÇĞ¹ø)À» Á¦¿ÜÇÑ ³ª¸ÓÁö°ª ¼öÁ¤
-- 5.¸ğµçÇĞ»ı Ãâ·Â
-- 6.Á¾·á
-*/
+
 import java.util.Scanner;
 
 public class KJH_Student {
@@ -24,14 +8,14 @@ public class KJH_Student {
 	public void info() {
 		while(true) {
 			System.out.println("=========================");
-			System.out.println("ÇĞ»ı °ü¸® ÇÁ·Î±×·¥(ver.KJH)");
+			System.out.println("í•™ìƒ ê´€ë¦¬ í”„ë¡œê·¸ë¨(ver.KJH)");
 			System.out.println("=========================");
-			System.out.println("1. ÇĞ»ı µî·Ï");
-			System.out.println("2. ÇĞ»ı °Ë»ö");
-			System.out.println("3. ÇĞ»ı »èÁ¦");
-			System.out.println("4. ÇĞ»ı ¼öÁ¤");
-			System.out.println("5. ¸ğµç ÇĞ»ı Ãâ·Â");
-			System.out.println("6. Á¾·á");
+			System.out.println("1. í•™ìƒ ë“±ë¡");
+			System.out.println("2. í•™ìƒ ê²€ìƒ‰");
+			System.out.println("3. í•™ìƒ ì‚­ì œ");
+			System.out.println("4. í•™ìƒ ìˆ˜ì •");
+			System.out.println("5. ëª¨ë“  í•™ìƒ ì¶œë ¥");
+			System.out.println("6. ì¢…ë£Œ");
 			System.out.print(">>>");
 			user = input.nextInt();
 			System.out.println("=========================");
@@ -61,27 +45,27 @@ public class KJH_Student {
 
 	}
 	public void register() {
-		System.out.println("ÇĞ»ı µî·Ï ±â´É");
+		System.out.println("í•™ìƒ ë“±ë¡ ê¸°ëŠ¥");
 	}
 	
 	public void search() {
-		System.out.println("ÇĞ»ı °Ë»ö ±â´É");
+		System.out.println("í•™ìƒ ê²€ìƒ‰ ê¸°ëŠ¥");
 	}
 	
 	public void delete() {
-		System.out.println("ÇĞ»ı »èÁ¦ ±â´É");
+		System.out.println("í•™ìƒ ì‚­ì œ ê¸°ëŠ¥");
 	}
 	
 	public void modify() {
-		System.out.println("ÇĞ»ı ¼öÁ¤ ±â´É");
+		System.out.println("í•™ìƒ ìˆ˜ì • ê¸°ëŠ¥");
 	}
 	
 	public void printAll() {
-		System.out.println("¸ğµç ÇĞ»ı Ãâ·Â ±â´É");
+		System.out.println("ëª¨ë“  í•™ìƒ ì¶œë ¥ ê¸°ëŠ¥");
 	}
 	
 	public void quit() {
-		System.out.println("Á¾·á ±â´É");
+		System.out.println("ì¢…ë£Œ ê¸°ëŠ¥");
 	}
 	
 }
