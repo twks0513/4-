@@ -1,23 +1,28 @@
 package com.student;
 import java.util.*;
+
 //import com.student.BEH_Student;
-//import com.student.KJH_Student; //Á÷Á¢ ÇÏ½Ç¶© º»ÀÎ°Å ÁÖ¼®ÇØÁ¦ÇØ¼­ »ç¿ëÇØÁÖ¼¼¿ä
+//import com.student.KJH_Student; //ì§ì ‘ í•˜ì‹¤ë• ë³¸ì¸ê±° ì£¼ì„í•´ì œí•´ì„œ ì‚¬ìš©í•´ì£¼ì„¸ìš”
 import com.student.KYH_Student;
+
 
 public class StudentMain {
 
 	public static void main(String[] args) {
+
 		KYH_Student yh = new KYH_Student();
+		KJH_Student ks = new KJH_Student();
+
 		Scanner scan = new Scanner(System.in);
 		int go;
-		System.out.println("1.¹æÀºÇõ 2.±İÁöÇı 3.±èÀ±Çö");
+		System.out.println("1.ë°©ì€í˜ 2.ê¸ˆì§€í˜œ 3.ê¹€ìœ¤í˜„");
 		go = scan.nextInt();
 		switch(go) {
 		case 1: 
-			System.out.println("¹æÀºÇõ");
+			System.out.println("ë°©ì€í˜");
 			break;
 		case 2: 
-			System.out.println("±İÁöÇı");
+			ks.info();
 			break;
 		case 3: 
 			yh.start();					
