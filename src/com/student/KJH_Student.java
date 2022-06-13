@@ -8,6 +8,7 @@ public class KJH_Student {
 	public void info() {
 		while(true) {
 			System.out.println("=========================");
+
 			System.out.println("학생 관리 프로그램(ver.KJH)");
 			System.out.println("=========================");
 			System.out.println("1. 학생 등록");
@@ -45,11 +46,13 @@ public class KJH_Student {
 
 	}
 	public void register() {
+
 		System.out.println("학생 등록 기능");
 	}
 	
 	public void search() {
 		System.out.println("학생 검색 기능");
+
 	}
 	
 	public void delete() {
